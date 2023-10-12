@@ -1,0 +1,11 @@
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\bin\Debug\net7.0\AutoPartsShop.Models.deps.json
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\bin\Debug\net7.0\AutoPartsShop.Models.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\bin\Debug\net7.0\AutoPartsShop.Models.pdb
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.Models.AssemblyInfoInputs.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.Models.AssemblyInfo.cs
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.Models.csproj.CoreCompileInputs.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.Models.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\refint\AutoPartsShop.Models.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.Models.pdb
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\ref\AutoPartsShop.Models.dll

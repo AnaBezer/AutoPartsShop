@@ -20,14 +20,14 @@
 
 <a href="ShoppingCart" class="btn btn-success shopping-cart-btn" style="background-color: #102061; color: white;">
     <i class="fa fa-shopping-cart"></i>&nbsp;Shopping Cart
-    @if (shoppingCartItemCount > 0)
+    @if (shoppingCartProductCount > 0)
     {
-        <span class="cart-badge">@shoppingCartItemCount</span>
+        <span class="cart-badge">@shoppingCartProductCount</span>
     }
 </a>
 
 @code {
-    private int shoppingCartItemCount = 0;
+    private int shoppingCartProductCount = 0;
 
     protected override void OnInitialized()
     {
@@ -36,7 +36,7 @@
 
     protected void ShoppingCartChanged(int totalQty)
     {
-        shoppingCartItemCount = totalQty;
+        shoppingCartProductCount = totalQty;
         StateHasChanged();
     }
 

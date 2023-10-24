@@ -1,5 +1,6 @@
-﻿using AutoPartsShop.Models.DTOs;
-using AutoPartsShop.WebUI.Services.Interfaces;
+﻿using AutoPartsShop.Application.Services.Interfaces;
+using AutoPartsShop.DataAccess.DTOs;
+
 using Microsoft.AspNetCore.Components;
 
 namespace AutoPartsShop.WebUI.Pages
@@ -25,7 +26,7 @@ namespace AutoPartsShop.WebUI.Pages
         {
             try
             {
-                Product = await ProductService.GetItem(Id);
+                Product = await ProductService.GetProduct(Id);
             }
             catch (Exception ex)
             {
@@ -33,11 +34,11 @@ namespace AutoPartsShop.WebUI.Pages
             }
         }
 
-        protected async Task AddToCart_Click(CartItemToAddDTO cartItemToAddDTO)
+        protected async Task AddToShoppingCart_Click(ShoppingCartProductToAddDTO shoppingCartProductToAddDTO)
         {
             try
             {
-                var cartItemDTO = await ShoppingCartService.AddItem(cartItemToAddDTO);
+                var cartItemDTO = await ShoppingCartService.AddProduct(shoppingCartProductToAddDTO);
                 NavigationManager.NavigateTo("/ShoppingCart");
             }
             catch (Exception)

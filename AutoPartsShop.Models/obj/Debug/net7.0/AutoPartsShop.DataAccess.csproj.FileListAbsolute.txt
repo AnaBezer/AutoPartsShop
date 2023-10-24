@@ -1,0 +1,14 @@
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\bin\Debug\net7.0\AutoPartsShop.DataAccess.deps.json
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\bin\Debug\net7.0\AutoPartsShop.DataAccess.runtimeconfig.json
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\bin\Debug\net7.0\AutoPartsShop.DataAccess.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\bin\Debug\net7.0\AutoPartsShop.DataAccess.pdb
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.csproj.AssemblyReference.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.AssemblyInfoInputs.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.AssemblyInfo.cs
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\refint\AutoPartsShop.DataAccess.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.pdb
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\AutoPartsShop.DataAccess.genruntimeconfig.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Models\obj\Debug\net7.0\ref\AutoPartsShop.DataAccess.dll

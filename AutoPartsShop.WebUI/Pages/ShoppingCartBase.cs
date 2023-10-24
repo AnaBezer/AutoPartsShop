@@ -1,5 +1,6 @@
-﻿using AutoPartsShop.Models.DTOs;
-using AutoPartsShop.WebUI.Services.Interfaces;
+﻿using AutoPartsShop.Application.Services.Interfaces;
+using AutoPartsShop.DataAccess.DTOs;
+
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
@@ -12,7 +13,7 @@ namespace AutoPartsShop.WebUI.Pages
 
         [Inject]
         public IShoppingCartService ShoppingCartService { get; set; }
-        public List<CartItemDTO> ShoppingCartItems { get; set; }
+        public List<ShoppingCartProductDTO> ShoppingCartProducts { get; set; }
         public string ErrorMessage { get; set; }
         protected string TotalPrice { get; set; }
         protected int TotalQuantity { get; set; }
@@ -21,8 +22,8 @@ namespace AutoPartsShop.WebUI.Pages
         {
             try
             {
-                ShoppingCartItems = await ShoppingCartService.GetItems(HardCoded.UserId);
-                CartChanged();
+                ShoppingCartProducts = await ShoppingCartService.GetProducts(HardCoded.UserId);
+                ShoppingCartChanged();
             }
             catch (Exception ex)
             {
@@ -30,42 +31,42 @@ namespace AutoPartsShop.WebUI.Pages
             }
         }
 
-        protected async Task DeleteCartItem_Click(int id)
+        protected async Task DeleteCartProduct_Click(int id)
         {
-            var cartItemDTO = await ShoppingCartService.DeleteItem(id);
+            var cartProductDTO = await ShoppingCartService.DeleteProduct(id);
 
-            RemoveCartItem(id);
-            CartChanged();
+            RemoveShoppingCartProduct(id);
+            ShoppingCartChanged();
 
 
         }
 
-        protected async Task UpdateQtyCartItem_Click(int id, int qty)
+        protected async Task UpdateQtyCartProduct_Click(int id, int qty)
         {
             try
             {
                 if (qty > 0)
                 {
                     // Update the item's quantity
-                    var updateItemDTO = new CartItemQtyUpdateDTO
+                    var updateProductDTO = new ShoppingCartProductQtyUpdateDTO
                     {
-                        CartItemId = id,
+                        ShoppingCartProductId = id,
                         Qty = qty
                     };
 
-                    var returnedUpdateItemDTO = await this.ShoppingCartService.UpdateQty(updateItemDTO);
+                    var returnedUpdateProductDTO = await this.ShoppingCartService.UpdateQty(updateProductDTO);
 
                     // Update item total price
-                    UpdateItemTotalPrice(returnedUpdateItemDTO);
+                    UpdateProductTotalPrice(returnedUpdateProductDTO);
 
-                    CartChanged();
+                    ShoppingCartChanged();
 
                     // Call JS interop to hide the update button
                     await MakeUpdateQtyButtonVisible(id, false);
                 }
                 else
                 {
-                    var item = this.ShoppingCartItems.FirstOrDefault(x => x.Id == id);
+                    var item = this.ShoppingCartProducts.FirstOrDefault(x => x.Id == id);
 
                     if (item != null)
                     {
@@ -85,12 +86,12 @@ namespace AutoPartsShop.WebUI.Pages
 
         private void SetTotalPrice()
         {
-            TotalPrice = this.ShoppingCartItems.Sum(p => p.TotalPrice).ToString("C");
+            TotalPrice = this.ShoppingCartProducts.Sum(p => p.TotalPrice).ToString("C");
         }
 
         private void SetTotalQuantity()
         {
-            TotalQuantity = this.ShoppingCartItems.Sum(p => p.Qty);
+            TotalQuantity = this.ShoppingCartProducts.Sum(p => p.Qty);
         }
 
         protected async Task UpdateQty_Input(int id)
@@ -103,37 +104,37 @@ namespace AutoPartsShop.WebUI.Pages
             await Js.InvokeVoidAsync("MakeUpdateQtyButtonVisible", id, visible);
         }
 
-        private void UpdateItemTotalPrice(CartItemDTO cartItemDTO)
+        private void UpdateProductTotalPrice(ShoppingCartProductDTO cartProductDTO)
         {
-            var item = GetCartItem(cartItemDTO.Id);
+            var product = GetShoppingCartProduct(cartProductDTO.Id);
 
-            if (item != null)
+            if (product != null)
             {
-                item.TotalPrice = cartItemDTO.Price * cartItemDTO.Qty;
+                product.TotalPrice = cartProductDTO.Price * cartProductDTO.Qty;
             }
         }
 
-        private void CalculateCartSummaryTotals()
+        private void CalculateShoppingCartSummaryTotals()
         {
             SetTotalPrice();
             SetTotalQuantity();
         }
 
-        private CartItemDTO GetCartItem(int id)
+        private ShoppingCartProductDTO GetShoppingCartProduct(int id)
         {
-            return ShoppingCartItems.FirstOrDefault(x => x.Id == id);
+            return ShoppingCartProducts.FirstOrDefault(x => x.Id == id);
         }
 
-        private void RemoveCartItem(int id)
+        private void RemoveShoppingCartProduct(int id)
         {
-            var cartItemDTO = GetCartItem(id);
+            var cartProductDTO = GetShoppingCartProduct(id);
 
-            ShoppingCartItems.Remove(cartItemDTO);
+            ShoppingCartProducts.Remove(cartProductDTO);
         }
 
-        private void CartChanged()
+        private void ShoppingCartChanged()
         {
-            CalculateCartSummaryTotals();
+            CalculateShoppingCartSummaryTotals();
             ShoppingCartService.RaiseEventOnShoppingCartChanged(TotalQuantity);
         }
     }

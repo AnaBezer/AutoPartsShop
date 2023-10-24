@@ -1,5 +1,5 @@
 ﻿@page "/ProductDetails/{Id:int}"
-@using AutoPartsShop.Models.DTOs
+@using AutoPartsShop.DataAccess.DTOs;
 @inherits ProductDetailsBase
 
 @if (Product == null && ErrorMessage == null)
@@ -27,9 +27,9 @@ else
             </p>
             <div>
                 <button class="btn btn-success"
-                @onclick="() => (AddToCart_Click( new CartItemToAddDTO
+                @onclick="() => (AddToShoppingCart_Click( new ShoppingCartProductToAddDTO
                 {
-                    CartId = HardCoded.CartId,
+                    ShoppingCartId = HardCoded.ShoppingCartId,
                     ProductId = Product.Id,
                     Qty = 1
                 }))">
@@ -43,9 +43,9 @@ else
 @code {
     private async Task AddToCart()
     {
-        var cartItemToAdd = new CartItemToAddDTO
+        var cartProductsToAdd = new ShoppingCartProductToAddDTO
             {
-                CartId = HardCoded.CartId,
+                ShoppingCartId = HardCoded.ShoppingCartId,
                 ProductId = Product.Id,
                 Qty = 1
             };

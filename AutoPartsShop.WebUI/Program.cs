@@ -1,6 +1,6 @@
 using AutoPartsShop.WebUI;
-using AutoPartsShop.WebUI.Services;
-using AutoPartsShop.WebUI.Services.Interfaces;
+using AutoPartsShop.Application.Services;
+using AutoPartsShop.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 

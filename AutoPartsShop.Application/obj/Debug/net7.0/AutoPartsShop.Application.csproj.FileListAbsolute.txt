@@ -1,0 +1,17 @@
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\bin\Debug\net7.0\AutoPartsShop.Application.deps.json
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\bin\Debug\net7.0\AutoPartsShop.Application.runtimeconfig.json
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\bin\Debug\net7.0\AutoPartsShop.Application.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\bin\Debug\net7.0\AutoPartsShop.Application.pdb
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\bin\Debug\net7.0\AutoPartsShop.DataAccess.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\bin\Debug\net7.0\AutoPartsShop.DataAccess.pdb
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.csproj.AssemblyReference.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.AssemblyInfoInputs.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.AssemblyInfo.cs
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.csproj.CoreCompileInputs.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.csproj.CopyComplete
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\refint\AutoPartsShop.Application.dll
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.pdb
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\AutoPartsShop.Application.genruntimeconfig.cache
+C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.Application\obj\Debug\net7.0\ref\AutoPartsShop.Application.dll

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoPartsShop.Models.DTOs
+namespace AutoPartsShop.DataAccess.DTOs
 {
     public class ProductDTO
     {

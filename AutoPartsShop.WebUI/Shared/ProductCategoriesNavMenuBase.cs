@@ -1,5 +1,6 @@
-﻿using AutoPartsShop.Models.DTOs;
-using AutoPartsShop.WebUI.Services.Interfaces;
+﻿using AutoPartsShop.Application.Services.Interfaces;
+using AutoPartsShop.DataAccess.DTOs;
+
 using Microsoft.AspNetCore.Components;
 
 namespace AutoPartsShop.WebUI.Shared

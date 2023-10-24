@@ -1,8 +1,9 @@
-using AutoPartsShop.API.Data;
-using AutoPartsShop.API.Repositories.Interfaces;
-using AutoPartsShop.API.Repositories;
+using AutoPartsShop.DataAccess.Repositories.Interfaces;
+using AutoPartsShop.DataAccess.Repositories;
+using AutoPartsShop.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
-using AutoPartsShop.WebUI.Services.Interfaces;
+using Microsoft.Extensions.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +14,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DatabaseContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("AutoPartsShopConnection")));
+//builder.Services.AddDbContext<DatabaseContext>(options =>
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("AutoPartsShopManagementConnection")));
+
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+
+builder.Services.AddDbContext<DatabaseContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AutoPartsShopManagementConnection")));
 
 var app = builder.Build();
 

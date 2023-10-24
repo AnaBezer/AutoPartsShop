@@ -1,5 +1,6 @@
-﻿using AutoPartsShop.Models.DTOs;
-using AutoPartsShop.WebUI.Services.Interfaces;
+﻿using AutoPartsShop.Application.Services.Interfaces;
+using AutoPartsShop.DataAccess.DTOs;
+
 using Microsoft.AspNetCore.Components;
 
 namespace AutoPartsShop.WebUI.Pages
@@ -18,7 +19,7 @@ namespace AutoPartsShop.WebUI.Pages
         {
             try
             {
-                Products = await ProductService.GetItemsByCategory(CategoryId);
+                Products = await ProductService.GetProductsByCategory(CategoryId);
 
                 if (Products != null && Products.Count() > 0)
                 {

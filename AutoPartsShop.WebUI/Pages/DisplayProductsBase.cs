@@ -1,4 +1,4 @@
-﻿using AutoPartsShop.Models.DTOs;
+﻿using AutoPartsShop.DataAccess.DTOs;
 using Microsoft.AspNetCore.Components;
 
 namespace AutoPartsShop.WebUI.Pages

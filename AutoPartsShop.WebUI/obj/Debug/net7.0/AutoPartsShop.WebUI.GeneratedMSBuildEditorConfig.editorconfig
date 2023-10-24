@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AutoPartsShop.WebUI
+build_property.RootNamespace = AutoPartsShop.WebUI
+build_property.ProjectDir = C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.WebUI\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\anell\Desktop\AutoPartsShop\AutoPartsShop.API\AutoPartsShop.WebUI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/DisplayError.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheUVycm9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/ProductDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdERldGFpbHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/ProductstByCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdHN0QnlDYXRlZ29yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Shared/CartMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENhcnRNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/DisplayProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVByb2R1Y3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-ndmoe0se71
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/DisplaySpinner.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGlzcGxheVNwaW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-sxa0f1xw11
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Pages/ShoppingCart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hvcHBpbmdDYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-lant75a13e
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0p1ubzrgjw
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4ain4llotf
+
+[C:/Users/anell/Desktop/AutoPartsShop/AutoPartsShop.API/AutoPartsShop.WebUI/Shared/ProductCategoriesNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFByb2R1Y3RDYXRlZ29yaWVzTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-u25quct6wg

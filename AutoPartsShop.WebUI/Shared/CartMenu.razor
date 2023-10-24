@@ -1,0 +1,47 @@
+﻿@implements IDisposable
+@inject IShoppingCartService shoppingCartService
+
+<style>
+    .shopping-cart-btn, .shopping-cart-btn:focus, .shopping-cart-btn:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .cart-badge {
+        position: relative;
+        top: -15px;
+        left: -5px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        background-color: #ff6347;
+        color: white;
+    }
+</style>
+
+<a href="ShoppingCart" class="btn btn-success shopping-cart-btn" style="background-color: #102061; color: white;">
+    <i class="fa fa-shopping-cart"></i>&nbsp;Shopping Cart
+    @if (shoppingCartItemCount > 0)
+    {
+        <span class="cart-badge">@shoppingCartItemCount</span>
+    }
+</a>
+
+@code {
+    private int shoppingCartItemCount = 0;
+
+    protected override void OnInitialized()
+    {
+        shoppingCartService.OnShoppingCartChanged += ShoppingCartChanged;
+    }
+
+    protected void ShoppingCartChanged(int totalQty)
+    {
+        shoppingCartItemCount = totalQty;
+        StateHasChanged();
+    }
+
+    void IDisposable.Dispose()
+    {
+        shoppingCartService.OnShoppingCartChanged -= ShoppingCartChanged;
+    }
+}

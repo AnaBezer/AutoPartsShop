@@ -1,0 +1,153 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\obj\\Debug\\net7.0\\build-gz\\qRrIn3np.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\AutoPartsShop.WebUI.styles.css",
+      "PackagePath": "staticwebassets\\AutoPartsShop.WebUI.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Brakes\\1.1preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Brakes\\1.1preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Brakes\\2preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Brakes\\2preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Brakes\\3preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Brakes\\3preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Brakes\\4preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Brakes\\4preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Filters\\10preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Filters\\10preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Filters\\6preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Filters\\6preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Filters\\7preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Filters\\7preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Filters\\8preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Filters\\8preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Filters\\9preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Filters\\9preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Oils\\11preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Oils\\11preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Oils\\12preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Oils\\12preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Oils\\13preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Oils\\13preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\Images\\Oils\\14preview.jpg",
+      "PackagePath": "staticwebassets\\Images\\Oils\\14preview.jpg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\JavaScript\\ShoppingCartFunctions.js",
+      "PackagePath": "staticwebassets\\JavaScript\\ShoppingCartFunctions.js"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\anell\\Desktop\\AutoPartsShop\\AutoPartsShop.API\\AutoPartsShop.WebUI\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.AutoPartsShop.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.AutoPartsShop.WebUI.props",
+      "PackagePath": "build\\AutoPartsShop.WebUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.AutoPartsShop.WebUI.props",
+      "PackagePath": "buildMultiTargeting\\AutoPartsShop.WebUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.AutoPartsShop.WebUI.props",
+      "PackagePath": "buildTransitive\\AutoPartsShop.WebUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

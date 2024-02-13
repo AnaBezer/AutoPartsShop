@@ -1,5 +1,6 @@
-﻿using AutoPartsShop.Models.DTOs;
-using AutoPartsShop.WebUI.Services.Interfaces;
+﻿using AutoPartsShop.Application.Services.Interfaces;
+using AutoPartsShop.DataAccess.DTOs;
+
 using Microsoft.AspNetCore.Components;
 
 namespace AutoPartsShop.WebUI.Pages
@@ -14,10 +15,10 @@ namespace AutoPartsShop.WebUI.Pages
         public IEnumerable<ProductDTO> Products { get; set; }
         protected override async Task OnInitializedAsync()
         {
-            Products = await ProductService.GetItems();
+            Products = await ProductService.GetProducts();
 
-            var shoppingCartItems = await ShoppingCartService.GetItems(HardCoded.UserId);
-            var totalQty = shoppingCartItems.Sum(i => i.Qty);
+            var shoppingCartProducts = await ShoppingCartService.GetProducts(HardCoded.UserId);
+            var totalQty = shoppingCartProducts.Sum(i => i.Qty);
 
             ShoppingCartService.RaiseEventOnShoppingCartChanged(totalQty);
         }

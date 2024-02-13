@@ -1,6 +1,6 @@
-﻿using AutoPartsShop.API.Extensions;
-using AutoPartsShop.API.Repositories.Interfaces;
-using AutoPartsShop.Models.DTOs;
+﻿using AutoPartsShop.DataAccess.Extensions;
+using AutoPartsShop.DataAccess.Repositories.Interfaces;
+using AutoPartsShop.DataAccess.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AutoPartsShop.API.Controllers
@@ -10,20 +10,17 @@ namespace AutoPartsShop.API.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IProductRepository productRepository;
-
-
         public ProductsController(IProductRepository productRepository)
         {
             this.productRepository = productRepository;
         }
 
-
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetItems()
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProducts()
         {
             try
             {
-                var products = await this.productRepository.GetItems();
+                var products = await this.productRepository.GetProducts();
                 var productCategories = await this.productRepository.GetCategories();
 
                 if (products == null || productCategories == null)
@@ -58,11 +55,11 @@ namespace AutoPartsShop.API.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<ProductDTO>> GetItem(int id)
+        public async Task<ActionResult<ProductDTO>> GetProduct(int id)
         {
             try
             {
-                var product = await this.productRepository.GetItem(id);
+                var product = await this.productRepository.GetProduct(id);
 
                 if (product == null)
                 {
@@ -116,13 +113,13 @@ namespace AutoPartsShop.API.Controllers
         }
 
         [HttpGet]
-        [Route("{categoryId}/GetItemsByCategory")]
+        [Route("{categoryId}/GetProductsByCategory")]
 
-        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetItemsByCategory(int categoryId)
+        public async Task<ActionResult<IEnumerable<ProductDTO>>> GetProductsByCategory(int categoryId)
         {
             try
             {
-                var products = await productRepository.GetItemsByCategory(categoryId);
+                var products = await productRepository.GetProductsByCategory(categoryId);
                 var productCategories = await productRepository.GetCategories();
                 var productDTOs = products.ConvertToDTO(productCategories);
 

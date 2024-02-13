@@ -1,6 +1,6 @@
-﻿using AutoPartsShop.API.Extensions;
-using AutoPartsShop.API.Repositories.Interfaces;
-using AutoPartsShop.Models.DTOs;
+﻿using AutoPartsShop.DataAccess.Extensions;
+using AutoPartsShop.DataAccess.Repositories.Interfaces;
+using AutoPartsShop.DataAccess.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -22,28 +22,28 @@ namespace AutoPartsShop.API.Controllers
         }
 
         [HttpGet]
-        [Route("{userId}/GetItems")]
-        public async Task<ActionResult<IEnumerable<CartItemDTO>>> GetItems(int userId)
+        [Route("{userId}/GetProducts")]
+        public async Task<ActionResult<IEnumerable<ShoppingCartProductDTO>>> GetProducts(int userId)
         {
             try
             {
-                var cartItems = await this.shoppingCartRepository.GetItems(userId);
+                var shoppingCartProducts = await this.shoppingCartRepository.GetProducts(userId);
 
-                if (cartItems == null)
+                if (shoppingCartProducts == null)
                 {
                     return NoContent();
                 }
 
-                var products = await this.productRepository.GetItems();
+                var products = await this.productRepository.GetProducts();
 
                 if (products == null)
                 {
                     throw new Exception("No products exist in the system");
                 }
 
-                var cartItemsDto = cartItems.ConvertToDTO(products);
+                var shoppingCartProductDTO = shoppingCartProducts.ConvertToDTO(products);
 
-                return Ok(cartItemsDto);
+                return Ok(shoppingCartProductDTO);
 
             }
             catch (Exception ex)
@@ -54,24 +54,24 @@ namespace AutoPartsShop.API.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<CartItemDTO>> GetItem(int id)
+        public async Task<ActionResult<ShoppingCartProductDTO>> GetProductById(int id)
         {
             try
             {
-                var cartItem = await this.shoppingCartRepository.GetItem(id);
-                if (cartItem == null)
+                var shoppingCartProduct = await this.shoppingCartRepository.GetProduct(id);
+                if (shoppingCartProduct == null)
                 {
                     return NotFound();
                 }
-                var product = await productRepository.GetItem(cartItem.ProductId);
+                var product = await productRepository.GetProduct(shoppingCartProduct.ProductId);
 
                 if (product == null)
                 {
                     return NotFound();
                 }
-                var cartItemDto = cartItem.ConvertToDTO(product);
+                var shoppingCartProductDTO = shoppingCartProduct.ConvertToDTO(product);
 
-                return Ok(cartItemDto);
+                return Ok(shoppingCartProductDTO);
             }
             catch (Exception ex)
             {
@@ -80,27 +80,27 @@ namespace AutoPartsShop.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CartItemDTO>> PostItem([FromBody] CartItemToAddDTO cartItemToAddDTO)
+        public async Task<ActionResult<ShoppingCartProductDTO>> PostProduct([FromBody] ShoppingCartProductToAddDTO shoppingCartProductToAddDTO)
         {
             try
             {
-                var newCartItem = await this.shoppingCartRepository.AddItem(cartItemToAddDTO);
+                var newShoppingCartProduct = await this.shoppingCartRepository.AddProduct(shoppingCartProductToAddDTO);
 
-                if (newCartItem == null)
+                if (newShoppingCartProduct == null)
                 {
                     return NoContent();
                 }
 
-                var product = await productRepository.GetItem(newCartItem.ProductId);
+                var product = await productRepository.GetProduct(newShoppingCartProduct.ProductId);
 
                 if (product == null)
                 {
-                    throw new Exception($"Something went wrong when attempting to retrieve product (productId:({cartItemToAddDTO.ProductId})");
+                    throw new Exception($"Something went wrong when attempting to retrieve product (productId:({newShoppingCartProduct.ProductId})");
                 }
 
-                var newCartItemDto = newCartItem.ConvertToDTO(product);
+                var newShoppingCartProductDTO = newShoppingCartProduct.ConvertToDTO(product);
 
-                return CreatedAtAction(nameof(GetItem), new { id = newCartItemDto.Id }, newCartItemDto);
+                return CreatedAtAction(nameof(GetProducts), new { id = newShoppingCartProductDTO.Id }, newShoppingCartProductDTO);
 
 
             }
@@ -111,25 +111,25 @@ namespace AutoPartsShop.API.Controllers
         }
 
         [HttpDelete("{id:int}")]
-        public async Task<ActionResult<CartItemDTO>> DeleteItem(int id)
+        public async Task<ActionResult<ShoppingCartProductDTO>> DeleteProduct(int id)
         {
             try
             {
-                var cartItem = await this.shoppingCartRepository.DeleteItem(id);
+                var shoppingCartProduct = await this.shoppingCartRepository.DeleteProduct(id);
 
-                if (cartItem == null)
+                if (shoppingCartProduct == null)
                 {
                     return NotFound();
                 }
 
-                var product = await this.productRepository.GetItem(cartItem.ProductId);
+                var product = await this.productRepository.GetProduct(shoppingCartProduct.ProductId);
 
                 if (product == null)
                     return NotFound();
 
-                var cartItemDto = cartItem.ConvertToDTO(product);
+                var shoppingCartProductDTO = shoppingCartProduct.ConvertToDTO(product);
 
-                return Ok(cartItemDto);
+                return Ok(shoppingCartProductDTO);
 
             }
             catch (Exception ex)
@@ -138,21 +138,21 @@ namespace AutoPartsShop.API.Controllers
             }
         }
         [HttpPatch("{id:int}")]
-        public async Task<ActionResult<CartItemDTO>> UpdateQty(int id, CartItemQtyUpdateDTO cartItemQtyUpdateDTO)
+        public async Task<ActionResult<ShoppingCartProductDTO>> UpdateQty(int id, ShoppingCartProductQtyUpdateDTO shoppingCartProductQtyUpdateDTO)
         {
             try
             {
-                var cartItem = await this.shoppingCartRepository.UpdateQty(id, cartItemQtyUpdateDTO);
-                if (cartItem == null)
+                var shoppingCartProduct = await this.shoppingCartRepository.UpdateQty(id, shoppingCartProductQtyUpdateDTO);
+                if (shoppingCartProduct == null)
                 {
                     return NotFound();
                 }
 
-                var product = await productRepository.GetItem(cartItem.ProductId);
+                var product = await productRepository.GetProduct(shoppingCartProduct.ProductId);
 
-                var cartItemDto = cartItem.ConvertToDTO(product);
+                var shoppingCartProductDTO = shoppingCartProduct.ConvertToDTO(product);
 
-                return Ok(cartItemDto);
+                return Ok(shoppingCartProductDTO);
 
             }
             catch (Exception ex)
@@ -161,8 +161,5 @@ namespace AutoPartsShop.API.Controllers
             }
 
         }
-
     }
-
-
 }

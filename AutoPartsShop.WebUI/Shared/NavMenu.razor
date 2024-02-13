@@ -22,7 +22,7 @@
 
         <div class="nav-item px-3 d-sm-none">
             <NavLink class="nav-link" href="ShoppingCart">
-                <span class="fas fa-shopping-cart" aria-hidden="true"></span>&nbsp;Shopping Cart (<b>@shoppingCartItemsCount</b>)
+                <span class="fas fa-shopping-cart" aria-hidden="true"></span>&nbsp;Shopping Cart (<b>@shoppingCartProductsCount</b>)
             </NavLink>
         </div>
 
@@ -34,7 +34,7 @@
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private int shoppingCartItemsCount = 0;
+    private int shoppingCartProductsCount = 0;
 
     private void ToggleNavMenu()
     {
@@ -47,7 +47,7 @@
     }
     private void ShoppingCartChanged(int totalQty)
     {
-        shoppingCartItemsCount = totalQty;
+        shoppingCartProductsCount = totalQty;
         StateHasChanged();
     }
     void IDisposable.Dispose()

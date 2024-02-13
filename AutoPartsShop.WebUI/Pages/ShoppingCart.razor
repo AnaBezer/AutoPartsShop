@@ -1,7 +1,7 @@
 ﻿@page "/ShoppingCart"
 @inherits ShoppingCartBase
 
-@if (ShoppingCartItems == null && ErrorMessage == null)
+@if (ShoppingCartProducts == null && ErrorMessage == null)
 {
     <DisplaySpinner></DisplaySpinner>
 }
@@ -12,30 +12,30 @@ else if (ErrorMessage != null)
 else
 {
     <h3 class="mb-5">Shopping Cart</h3>
-    @if (ShoppingCartItems.Count() > 0)
+    @if (ShoppingCartProducts.Count() > 0)
     {
         <div class="row mb-5">
             <div class="col-md-9">
-                @foreach (var item in ShoppingCartItems)
+                @foreach (var product in ShoppingCartProducts)
                 {
                     <div class="row mb-4">
                         <div class="col-md-4">
-                            <img src="@item.ProductImageURL" width="300" class="img-thumbnail">
+                            <img src="@product.ProductImageURL" width="300" class="img-thumbnail">
                         </div>
                         <div class="col-md-8">
-                            <h5>@item.ProductName</h5>
-                            <div class="mb-4">@item.ProductDescription</div>
+                            <h5>@product.ProductName</h5>
+                            <div class="mb-4">@product.ProductDescription</div>
                             <span>
-                                Price: <b>@item.Price.ToString("C")</b>
-                                <input @oninput="()=>UpdateQty_Input(item.Id)"
-                                       type="number" @bind="@item.Qty" />
-                                <button data-itemId="@item.Id" class="btn btn-info btn-sm update-qty"
-                                @onclick="(() => UpdateQtyCartItem_Click(item.Id, item.Qty))">
+                                Price: <b>@product.Price.ToString("C")</b>
+                                <input @oninput="()=>UpdateQty_Input(product.Id)"
+                                       type="number" @bind="@product.Qty" />
+                                <button data-itemId="@product.Id" class="btn btn-info btn-sm update-qty"
+                                @onclick="(() => UpdateQtyCartProduct_Click(product.Id, product.Qty))">
                                     Update Qty
                                 </button>
                             </span>
                             <div>
-                                <button @onclick="(() => DeleteCartItem_Click(item.Id))"
+                                <button @onclick="(() => DeleteCartProduct_Click(product.Id))"
                                         class="btn btn-danger sm">
                                     <i class="fa fa-trash"></i>
                                 </button>
@@ -48,7 +48,7 @@ else
             <div class="col-md-3">
                 <h5>Cart Summary</h5>
                 <div class="mt-2">
-                    <div>Total - (@TotalQuantity items)&nbsp;<b>@TotalPrice</b></div>
+                    <div>Total - (@TotalQuantity products)&nbsp;<b>@TotalPrice</b></div>
                     <a href="Checkout" class="btn btn-success">
                         <span class="oi oi-credit-card"></span>&nbsp; Proceed to Checkout
                     </a>
@@ -58,7 +58,7 @@ else
     }
     else
     {
-        <h4>There are currently no items in your shopping cart</h4>
+        <h4>There are currently no products in your shopping cart</h4>
     }
 
 }
